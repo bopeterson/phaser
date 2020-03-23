@@ -13,7 +13,6 @@ class Beam extends Phaser.GameObjects.Sprite{
     this.body.velocity.y = - 250;
 
     scene.projectiles.add(this);
-  
 
   }
 

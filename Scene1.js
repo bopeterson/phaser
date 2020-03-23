@@ -36,18 +36,9 @@ class Scene1 extends Phaser.Scene {
     });
 
     this.load.bitmapFont("pixelFont", "assets/font/font.png", "assets/font/font.xml");
-
-    // 1.1 load sounds in both formats mp3 and ogg
-    this.load.audio("audio_beam", ["assets/sounds/beam.ogg", "assets/sounds/beam.mp3"]);
-    this.load.audio("audio_explosion", ["assets/sounds/explosion.ogg", "assets/sounds/explosion.mp3"]);
-    this.load.audio("audio_pickup", ["assets/sounds/pickup.ogg", "assets/sounds/pickup.mp3"]);
-    this.load.audio("music", ["assets/sounds/sci-fi_platformer12.ogg", "assets/sounds/sci-fi_platformer12.mp3"]);
   }
 
   create() {
-
-
-
     this.add.text(20, 20, "Loading game...");
     this.scene.start("playGame");
 
@@ -109,8 +100,6 @@ class Scene1 extends Phaser.Scene {
       frameRate: 20,
       repeat: -1
     });
-
-
 
   }
 }
